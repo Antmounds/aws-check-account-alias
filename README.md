@@ -1,8 +1,10 @@
 # AWS Account Alias Checker
+[![MIT license](http://img.shields.io/badge/license-MIT-blue.svg)](http://opensource.org/licenses/MIT) [![Discord Chat](https://img.shields.io/discord/299962468581638144.svg?logo=discord)](https://discord.gg/dw3Dam2)
+
 This tool checks the aws account alias every 5 min and attempts to change it to the `goal_account_alias`.
 
 ## Instructions
-The only settings that need to be changed are in the `variables.tf` file. Add the desired account alias and update the phone number to receive an SMS to on successful change. Function results are logged to Cloudwatch.
+Settings that need to be changed are in the `variables.tf` file. Add the desired account alias and update the phone number to receive an SMS to on successful change. Function results are logged to Cloudwatch. After successfully changing the account alias, the function sends an SMS and sets itself to 0 concurrency.
 
 #### Option A
 ```
@@ -14,7 +16,7 @@ $ terraform apply                 # launches function, scheduled event, and perm
 #### Option B
 ```
 $ git clone https://gitlab.com/antmounds/aws-account-alias-checker.git  # clones repo to current local directory
-$ ./deploy.sh                 # zips and runs terraform init, plan, and deploy
+$ ./deploy.sh                 				# zips and runs terraform init, plan, and deploy
 ```
 #### Variables - `variables.tf`
 | *name* | *description* |
