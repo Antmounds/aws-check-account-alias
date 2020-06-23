@@ -21,7 +21,6 @@ $ ./deploy.sh                 				# zips and runs terraform init, plan, and depl
 #### Variables - `variables.tf`
 | *name* | *description* |
 | ------ | ------ |
-| **goal_account_alias** | the goal account alias |
 | **app_name** | Name of this lambda function. |
 | **goal_account_alias** | The account alias that is desired |
 | **owner** | Email of service owner in case of notifications |
@@ -42,7 +41,6 @@ $ ./deploy.sh                 				# zips and runs terraform init, plan, and depl
 
 0 directories, 8 files
 ```
-*generated with `$ tree --dirsfirst`* 
 
 ## Contributing
 Pull requests, forks and stars are 太棒了 and mucho appreciatado!

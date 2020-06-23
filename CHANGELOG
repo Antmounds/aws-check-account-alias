@@ -1,0 +1,9 @@
+## [0.7.0] - 2020-06-23
+### Added
+- Changelog with human-friendly updates
+
+### Removed
+- Simple 'tree' command to display directory structure.
+
+### Fixed
+- Duplicate variable 'goal_account_alias' in table in README
